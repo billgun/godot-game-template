@@ -1,0 +1,106 @@
+[gd_scene format=3 uid="uid://da4xi4pld76t6"]
+
+[ext_resource type="Script" uid="uid://drukfhpk6avpr" path="res://scenes/ui/settings_menu.gd" id="1_qwcqe"]
+
+[node name="SettingsMenu" type="Control" unique_id=926341363]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qwcqe")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1333909458]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=2049849240]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -111.0
+offset_top = -83.5
+offset_right = 111.0
+offset_bottom = 83.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=433505490]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="TitleLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1163028681]
+layout_mode = 2
+text = "Settings"
+
+[node name="MasterVolumeRow" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=1246048051]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/MasterVolumeRow" unique_id=1915867624]
+layout_mode = 2
+text = "Master Volume"
+
+[node name="MasterSlider" type="HSlider" parent="MarginContainer/VBoxContainer/MasterVolumeRow" unique_id=1967408673]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+max_value = 1.0
+step = 0.05
+
+[node name="MusicVolumeRow" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=1179359884]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/MusicVolumeRow" unique_id=1289841148]
+layout_mode = 2
+text = "Music Volume"
+
+[node name="MusicSlider" type="HSlider" parent="MarginContainer/VBoxContainer/MusicVolumeRow" unique_id=1701590614]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+max_value = 1.0
+step = 0.05
+
+[node name="SfxVolumeRow" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=1237601892]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/SfxVolumeRow" unique_id=800641170]
+layout_mode = 2
+text = "SFX Volume"
+
+[node name="SfxSlider" type="HSlider" parent="MarginContainer/VBoxContainer/SfxVolumeRow" unique_id=727727246]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+max_value = 1.0
+step = 0.05
+
+[node name="FullscreenRow" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=252752939]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/FullscreenRow" unique_id=382448315]
+layout_mode = 2
+text = "Fullscreen"
+
+[node name="FullscreenCheck" type="CheckButton" parent="MarginContainer/VBoxContainer/FullscreenRow" unique_id=660514089]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=813768612]
+layout_mode = 2
+
+[node name="BackButton" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=792878478]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Back"
+
+[node name="ApplyButton" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=1932831647]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Apply"

@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://d0n6tt5uph6vg"]
+
+[sub_resource type="GDScript" id="GDScript_vue75"]
+script/source = "extends Node2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	#EventBus.game_started.emit()
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	print(GameManager.is_playing())
+	pass
+"
+
+[node name="MainMenu" type="Node2D" unique_id=1456327171]
+script = SubResource("GDScript_vue75")
